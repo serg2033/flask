@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -20,8 +20,8 @@ def name(name):
 
 @app.route('/add/<int:number1>/<int:number2>')
 def add(number1, number2):
-    #number1 = int(number1)
-    #number2 = int(number2)
+    # number1 = int(number1)
+    # number2 = int(number2)
     return f"{number1} + {number2} = {number1 + number2}"
 
 
